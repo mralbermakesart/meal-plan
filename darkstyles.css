@@ -30,6 +30,19 @@ body {
     border-bottom: 1px solid #666;
   }
 
+  td:nth-child(n+2):nth-child(-n+4),
+th:nth-child(n+2):nth-child(-n+4) {
+  width: 33.33%;
+}
+
+/* The :nth-child() selector is used to target specific elements based on their index within their parent element. In this case, the td and th elements are the child elements of the tr element, which is the parent element.
+
+The formula n+2 selects all elements starting from the 2nd child element (i.e., the 2nd column), while the formula -n+4 selects all elements up to and including the 4th child element (i.e., the 4th column).
+
+When you use two :nth-child() selectors together, separated by a comma, you are essentially targeting elements that match both selectors. In this case, the first selector targets all td elements that are the 2nd, 3rd, or 4th child of their parent tr element, and the second selector targets all th elements that are the 2nd, 3rd, or 4th child of their parent tr element.
+
+So, the entire selector td:nth-child(n+2):nth-child(-n+4), th:nth-child(n+2):nth-child(-n+4) targets all td and th elements that are the 2nd, 3rd, or 4th child of their parent tr element and applies the specified style rules to them. */
+
   #my-plan th {
     background-color: #1b5e20;
     font-weight: bold;
@@ -90,8 +103,45 @@ body {
     transform: translateY(4px);
   }
 
-  #niki-plan {
+  #my-plan {
     display: none;
   }
 
-  
+  .multi-line {
+    white-space: pre-wrap;
+    /* line-height: 20px; */
+  }
+
+  a:visited, a:link {
+    color:aquamarine;
+  }
+
+  .expandable {
+    display: none;
+  }
+
+  #expand:checked + .expandable {
+    display: block;
+  }
+
+  li {
+    list-style: none;
+    padding-left: 0;
+}
+li {
+    position: relative;
+    padding-left: 20px;
+}
+
+  li:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-image: url('https://dev-bay.com/wp-content/uploads/2018/05/bullet-1.png.webp');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
