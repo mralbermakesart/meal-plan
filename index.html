@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<title>Healthy Routine Plan</title>
+
+    <link rel="stylesheet" type="text/css" href="darkstyles.css">
+
+
+<!-- TEST CODE -->
+
+    <script>
+        function togglePlan() {
+            var myTable = document.getElementById("my-plan");
+            var nikiTable = document.getElementById("niki-plan");
+            var button = document.getElementById("toggle-button");
+            if (button.innerHTML === "Switch to Niki's Plan") {
+                myTable.style.display = "none";
+                nikiTable.style.display = "block";
+                button.innerHTML = "Switch to My Plan";
+            } else {
+                myTable.style.display = "block";
+                nikiTable.style.display = "none";
+                button.innerHTML = "Switch to Niki's Plan";
+            }
+        }
+    </script>
+
+<!-- END TEST CODE -->
+
+</head>
+<body>
+  <button id="toggle-button" onclick="togglePlan()">Switch to Niki's Plan</button>
+  <div id="my-plan">
+    <h1>Nolan's Healthy Routine</h1>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Breakfast</th>
+        <th>Lunch</th>
+        <th>Dinner</th>
+        <th>Snack</th>
+      </tr>
+      <tr>
+        <td>Day 1</td>
+        <td>Yogurt with fresh fruit and granola</td>
+        <td>Hummus and vegetable wrap with apple slices</td>
+        <td>Baked chicken with roasted vegetables and brown rice or quinoa</td>
+        <td>Carrot sticks with hummus</td>
+      </tr>
+      <tr>
+        <td>Day 2</td>
+        <td>Oatmeal with sliced banana and cinnamon</td>
+        <td>Quinoa and black bean salad with fresh veggies and orange slices</td>
+        <td>Grilled chicken breast with steamed or roasted vegetables and sweet potato or baked potato</td>
+        <td>Apple slices with almond butter</td>
+      </tr>
+      <tr>
+        <td>Day 3</td>
+        <td>Scrambled eggs with spinach and tomato with whole grain toast & Yogurt</td>
+        <td>Chicken sandwich on whole wheat with spinach, Roasted vegetables</td>
+        <td>Roasted sweet potato with Beans, Tomato, Avocado & Yogurt</td>
+        <td>Greek yogurt with berries</td>
+      </tr>
+      <tr>
+        <td>Day 4</td>
+        <td>Scrambled eggs, Spinach, Tomato, Avocado</td>
+        <td>Tuna & avocado sandwich</td>
+        <td>Vegetable stir-fry with brown rice, Soup</td>
+        <td>Sliced cucumber with hummus</td>
+      </tr>
+    </table>
+  </div>
+
+<!-- NIKI'S PLAN -->
+
+  <div id="niki-plan">
+    <h1>Niki's Healthy Routine</h1>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Breakfast</th>
+        <th>Lunch</th>
+        <th>Dinner</th>
+        <th>Snack</th>
+      </tr>
+      <tr>
+        <td>Day 1</td>
+        <td>Yogurt with fresh fruit and granola</td>
+        <td>Burrito with Hummus, Cheese, and Veggies</td>
+        <td>Baked chicken with roasted vegetables and brown rice</td>
+        <td>Carrot sticks with hummus</td>
+      </tr>
+      <tr>
+        <td>Day 2</td>
+        <td>Oatmeal with sliced banana and cinnamon</td>
+        <td>Quinoa and black bean salad with fresh veggies and orange slices</td>
+        <td>Grilled chicken breast with steamed or roasted vegetables and sweet potato or baked potato</td>
+        <td>Apple slices with almond butter</td>
+      </tr>
+      <tr>
+        <td>Day 3</td>
+        <td>Scrambled eggs with spinach and tomato with whole grain toast & Yogurt</td>
+        <td>Chicken sandwich on whole wheat with spinach, Roasted vegetables</td>
+        <td>Soup, Fruits</td>
+        <td>Greek yogurt with berries</td>
+      </tr>
+      <tr>
+        <td>Day 4</td>
+        <td>Scrambled eggs, Spinach, Tomato, Avocado // Egg yolk, Vanilla yogurt, Granola</td>
+        <td>Tuna & avocado sandwich // Burrito with Chicken, Rice, Veggies, Cheese</td>
+        <td>Vegetable stir-fry with brown rice, Soup</td>
+        <td>Sliced cucumber with hummus</td>
+      </tr>
+    </table>
+  </div>
+
+    <div class="button-div">
+      <a href="grocerylist.html">
+        <button id="switch-btn">Go to Grocery List</button>
+      </a>
+    </div>
+
+
+    <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Morning</th>
+            <th>Morning Exercise Focus</th>
+            <th>Afternoon</th>
+            <th>Yoga Focus</th>
+            <th>Meditation Focus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Meditation Run (10 min)</td>
+            <td>Focus on deep breathing and mindfulness.</td>
+            <td>
+              Yoga (20 min)<br>
+              Guided Meditation (10 min) - Body Scan
+            </td>
+            <td>Choose a relaxing yoga style like Hatha or Yin. Focus on releasing tension in the body.</td>
+            <td>Body awareness and relaxation.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Music Run (20 min)</td>
+            <td>Choose upbeat music to keep your energy high and motivate you.</td>
+            <td>
+              Yoga (20 min)<br>
+              Guided Meditation (10 min) - Loving Kindness
+            </td>
+            <td>Choose a gentle yoga flow to stretch out your muscles and calm your mind.</td>
+            <td>Focus on cultivating feelings of love, kindness, and compassion towards oneself and others.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Meditation Run (10 min)</td>
+            <td>Focus on gratitude and appreciation.</td>
+            <td>
+              Yoga (20 min)<br>
+              Guided Meditation (10 min) - Mindfulness
+            </td>
+            <td>Choose a restorative yoga practice to relax and release stress.</td>
+            <td>Focus on being present and aware in the current moment.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Zombies Run (15 min)</td>
+            <td>Focus on the feeling of fear and the adrenaline rush of running.</td>
+            <td>
+              Yoga (20 min)<br>
+              Guided Meditation (10 min) - Breath Awareness
+            </td>
+            <td>Choose a gentle yoga flow to stretch out your muscles and calm your mind.</td>
+            <td>Focus on being aware of the breath and using it to calm the mind and body.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Hiking (1 hour)</td>
+            <td>Focus on the beauty of nature and being in the present moment.</td>
+            <td>
+              Yoga (20 min)<br>
+              Guided Meditation (10 min) - Visualization
+            </td>
+            <td>Choose a restorative yoga practice to relax and release stress.</td>
+            <td>Focus on visualizing a peaceful, relaxing scene to reduce stress and anxiety.</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+<!-- EXTRA MENUS
+  <table>
+		<tr>
+			<th>Day</th>
+			<th>Breakfast</th>
+			<th>Lunch</th>
+			<th>Dinner</th>
+			<th>Snack</th>
+		</tr>
+		<tr>
+			<td>Day 1</td>
+			<td>Yogurt with fresh fruit and granola</td>
+			<td>Hummus and vegetable wrap with apple slices</td>
+			<td>Baked chicken with roasted vegetables and brown rice or quinoa</td>
+			<td>Carrot sticks with hummus</td>
+		</tr>
+		<tr>
+			<td>Day 2</td>
+			<td>Oatmeal with sliced banana and cinnamon</td>
+			<td>Quinoa and black bean salad with fresh veggies and orange slices</td>
+			<td>Grilled chicken breast with steamed or roasted vegetables and sweet potato or baked potato</td>
+			<td>Apple slices with almond butter</td>
+		</tr>
+		<tr>
+			<td>Day 3</td>
+			<td>Scrambled eggs with spinach and tomato with whole grain toast & Yogurt</td>
+			<td>Chicken sandwich on whole wheat with spinach, Roasted vegetables</td>
+			<td>Baked sweet potato with Beans, Tomato, Avocado & Yogurt // NIKI => Soup, Fruits</td>
+			<td>Greek yogurt with berries</td>
+		</tr>
+		<tr>
+			<td>Day 4</td>
+			<td>Smoothie bowl with coffee or tea</td>
+			<td>Tuna or chicken salad with whole grain crackers and grapes</td>
+			<td>Vegetable stir-fry with brown rice</td>
+			<td>Sliced cucumber with hummus</td>
+		</tr>
+    </table> -->
+
+
+
+
+
+</body>
